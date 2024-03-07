@@ -1,0 +1,2 @@
+# Holypost
+At its core, this web api will enforce image content moderation using AWS Rekognition and preventing negative text using AWS Comprehend. AWS Lambda will be used for scalability and to decouple the tasks of image and text processing from the main app; e.g. when a user posts an image, it gets uploaded to a s3 bucket and that event will trigger the lambda. Users will eventually be able to follow and like among other actions, but the MVP will let users post pictures and text that pass criteria. 
